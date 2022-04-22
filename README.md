@@ -1,3 +1,3 @@
-# Horas do Dia
+# Hora do Dia
 
-_Projeto **Horas do Dia** sendo Desenvolvido para aprimorar minhas habilidades de JavaScript_..
+_Projeto **Hora do Dia** sendo Desenvolvido para aprimorar minhas habilidades de JavaScript_..

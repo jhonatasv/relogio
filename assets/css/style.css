@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
 
 :root {
-    ---background-body: #5f9ea0;
+    ---background-body: #97A0A6;
     ---font: 'PT Mono', monospace;
 }
 
@@ -22,25 +22,37 @@ body {
     background-color: var(---background-body);
 }
 
+header {
+    text-align: center;
+    margin: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: rgba(255, 255, 255, 0.89);
+    font-size: 14px;
+}
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     font-family: var(---font);
-}
 
-h1 {
-    margin: 20px;
 }
 
 .conteiner {
     padding: 10px;
-    width: 590px;
-    height: 450px;
+    width: 550px;
+    height: 420px;
     border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.911);
     box-shadow: 1px 3px 5px #0000005c;
+}
+
+img {
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    margin-top: 50px;
 }
 
 .footer {
