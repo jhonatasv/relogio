@@ -17,6 +17,7 @@
 a {
     list-style: none;
 }
+
 body {
     background-color: var(---background-body);
 }
@@ -35,10 +36,11 @@ h1 {
 
 .conteiner {
     padding: 10px;
-    width: 600px;
+    width: 590px;
     height: 450px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: rgba(255, 255, 255, 0.911);
+    box-shadow: 1px 3px 5px #0000005c;
 }
 
 .footer {
@@ -46,16 +48,16 @@ h1 {
     margin-top: 10px;
     font-size: 17px;
     color: rgba(0, 0, 0, 0.863);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer a {
     color: rgb(17, 14, 14);
     letter-spacing: 2px;
-    background-color: rgba(0, 0, 0, 0.075);
+    background-color: rgba(0, 0, 0, 0.048);
+    border-radius: 4px;
 }
 
 a:hover {
     text-decoration: underline;
 }
-
-
