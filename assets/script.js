@@ -13,8 +13,8 @@ function carregandoPagina() {
     let link = document.querySelector('#link')
     let p = document.querySelector('#paragrafo')
 
-    if (h >= 1 && h <= 5) { 
-        div.innerHTML = 'madrugada' 
+    if (h >= 1 && h <= 5) {
+        div.innerHTML = 'madrugada'
         img.src = 'assets/img/madrugada.jpg'
         document.body.style.backgroundColor = '#2D333B'
         link.style.color = 'white'
@@ -38,8 +38,6 @@ function carregandoPagina() {
     }
     
 }
-
-
 
 
 
