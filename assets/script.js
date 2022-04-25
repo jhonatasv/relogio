@@ -5,12 +5,17 @@ setInterval(function() {
     const data = new Date()
     let min = data.getMinutes()
     let seg = data.getSeconds()
-    let saida = document.querySelector('#relogio')
 
-    min = zero(min)
-    seg = zero(seg)
+    let saidaHora = document.querySelector('#hora')
+    let saidaMin = document.querySelector('#min')
+    let saidaSeg = document.querySelector('#seg')
 
-    saida.textContent = `${h}:${min}:${seg}`
+   min = zero(min)
+   seg = zero(seg)
+
+    saidaHora.textContent = `${h}`
+    saidaMin.textContent = `${min}`
+    saidaSeg.textContent = `${seg}`
 
 },1000)
 
@@ -52,7 +57,6 @@ function carregandoPagina() {
     }
     
 }
-
 
 
 // function carregandoPagina() { 
