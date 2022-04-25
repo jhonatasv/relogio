@@ -1,36 +1,50 @@
 const data = new Date()
 let h = data.getHours()
-let minutos = data.getMinutes()
-let segundos = data.getSeconds()
 
+setInterval(function() {
+    const data = new Date()
+    let min = data.getMinutes()
+    let seg = data.getSeconds()
+    let saida = document.querySelector('#relogio')
 
+    min = zero(min)
+    seg = zero(seg)
 
-function carregandoPagina() { 
-    let div = document.querySelector('#relogio')
+    saida.textContent = `${h}:${min}:${seg}`
+
+},1000)
+
+function zero(tempo) {
+    if(tempo < 10) {
+        tempo = '0' + tempo
+    } return tempo;
+}
+
+function carregandoPagina() {
+    let msg = document.querySelector('#msg')
     let img = document.querySelector('#img')
-
-
+    
     let link = document.querySelector('#link')
     let p = document.querySelector('#paragrafo')
-
+    
     if (h >= 1 && h <= 5) {
-        div.innerHTML = 'madrugada'
+        msg.textContent = 'madrugada'
         img.src = 'assets/img/madrugada.jpg'
         document.body.style.backgroundColor = '#2D333B'
         link.style.color = 'white'
         p.style.color = 'white'
 
     } else if (h >= 6 && h <= 12) {
-        div.innerHTML = `manha`
+        msg.textContent = `manha`
         img.src = 'assets/img/manha.jpg'
-
+        
     } else if (h >= 13 && h <= 18) {
-        div.innerHTML = `tarde`
+        msg.textContent = `tarde`
         img.src = 'assets/img/tarde.jpg'
         document.body.style.backgroundColor = '#f2a663ef'
-
+        
     } else {
-        div.innerHTML = `noite`
+        msg.textContent = `noite`
         img.src = 'assets/img/noite.jpg'
         document.body.style.backgroundColor = '#35302fc9'
         link.style.color = 'white'
@@ -38,40 +52,6 @@ function carregandoPagina() {
     }
     
 }
-
-
-
-
-/*
-const data = new Date()
-let h = data.getHours()
-let minutos = data.getMinutes()
-let segundos = data.getSeconds()
-
-
-
-function carregandoPagina() { 
-    let relogio = document.querySelector('#relogio')
-    let img = document.querySelector('#img')
-
-    if (h >= 1 && h <= 5) { 
-    relogio.innerHTML = 'madrugada' 
-    img.src = 'assets/img/madrugada.jpg'
-
-    } else if (h >= 6 && h <= 12) {
-    relogio.innerHTML = `manha`
-    img.src = 'assets/img/manha.jpg'
-
-    } else if (h >= 13 && h <= 18) {
-    relogio.innerHTML = `tarde`
-    img.src = 'assets/img/tarde.jpg'
-    } else {
-    relogio.innerHTML = `noite`
-    img.src = 'assets/img/noite.jpg'
-    }
-    
-}
-*/
 
 
 
@@ -100,4 +80,3 @@ function carregandoPagina() {
 //     }
     
 // }
-
