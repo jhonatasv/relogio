@@ -26,7 +26,7 @@ function zero(tempo) {
 
 function carregandoPagina() {
     const data = new Date()
-    let h = 17 //data.getHours()
+    let h = data.getHours()
     let msg = document.querySelector('#msg')
     let img = document.querySelector('#img')
     
