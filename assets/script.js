@@ -1,8 +1,6 @@
-const data = new Date()
-let h = data.getHours()
-
 setInterval(function() {
     const data = new Date()
+    let hora = data.getHours()
     let min = data.getMinutes()
     let seg = data.getSeconds()
 
@@ -10,10 +8,11 @@ setInterval(function() {
     let saidaMin = document.querySelector('#min')
     let saidaSeg = document.querySelector('#seg')
 
-   min = zero(min)
-   seg = zero(seg)
+    hora = zero(hora)
+    min = zero(min)
+    seg = zero(seg)
 
-    saidaHora.textContent = `${h}`
+    saidaHora.textContent = `${hora}`
     saidaMin.textContent = `${min}`
     saidaSeg.textContent = `${seg}`
 
@@ -26,6 +25,8 @@ function zero(tempo) {
 }
 
 function carregandoPagina() {
+    const data = new Date()
+    let h = data.getHours()
     let msg = document.querySelector('#msg')
     let img = document.querySelector('#img')
     
