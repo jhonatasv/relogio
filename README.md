@@ -2,7 +2,7 @@
 
 _Projeto **Hora do Dia** Desenvolvido para aprimorar minhas habilidades de JavaScript_<br>
 
-Nele reutilizei o design da aula 12 do <a hrfe="https://github.com/gustavoguanabara" targe="_blank">Gustavo guanabara</a> e implementei melhorias no Script e no Design.
+Nele reutilizei o design da aula 12 do <a href="https://github.com/gustavoguanabara" targe="_blank">Gustavo guanabara</a> e implementei melhorias no Script e no Design.
 
 <div align="center">
   _versão do projeto **V.02**_ <br>
