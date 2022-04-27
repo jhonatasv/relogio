@@ -5,7 +5,7 @@ Nele reutilizei o design da aula 12 do <a href="https://github.com/gustavoguanab
 
 <div align="center">
 
-  _versão do projeto **V.02**_ <br>
+  _versão do projeto **V.03**_ <br>
   <img src="https://user-images.githubusercontent.com/88457552/165367097-65def23b-ab1a-4a2c-93f6-2037e88bf779.PNG">
 
 
