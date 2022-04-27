@@ -1,0 +1,47 @@
+*{
+    transition: all 0.5s ease-in;
+}
+
+@media (max-width: 562px) {
+    .container-content  {
+    width: 450px;
+   }
+
+   .relogio {
+    width: 450px;
+   }
+}
+
+@media (max-width: 465px) {
+    .container-content {
+        width: 400px;
+    }
+
+    .relogio{
+        width: 400px;
+    }
+}
+
+@media (max-width: 415px) {
+    .container-content {
+      width: 310px;  
+    }
+    .relogio {
+        width: 310px;
+    }
+}
+
+@media (max-width: 280px) {
+    .container-content {
+        width: 270px;
+    }
+
+    .relogio {
+        width: 270px;
+    }
+
+    img {
+        width: 235px;
+        height: 235px;
+    }
+}
