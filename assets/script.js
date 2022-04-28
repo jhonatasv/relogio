@@ -43,6 +43,7 @@ function carregandoPagina() {
     } else if (h >= 6 && h <= 12) {
         msg.textContent = `manha`
         img.src = 'assets/img/manha.jpg'
+        document.body.style.background = '#97A0A6'
         
     } else if (h >= 13 && h <= 18) {
         msg.textContent = `tarde`
