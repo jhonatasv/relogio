@@ -99,12 +99,25 @@ img {
 }
 
 .footer a {
+    position: relative;
+    background-color: #0c121805;
+    border-radius: 4px;
     color: #000000dc;
     letter-spacing: 2px;
-    background-color: #0c192910;
-    border-radius: 4px;
 }
 
-a:hover {
-    text-decoration: underline;
+a::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(15, 13, 3, 0.596);
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.5s ease;
+}
+
+a:hover::after {
+    width: 100%;
+    transition: all 0.5s ease;
 }
